@@ -200,7 +200,7 @@ arrowList[3].addEventListener("click", () => {
 } )()
 
 
-
+console.log("git Test 학원에서 저장");
 
 
 
