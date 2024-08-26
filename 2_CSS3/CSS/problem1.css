@@ -1,0 +1,258 @@
+div {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* 문제1 */
+.container-1 {
+    /* 가장 바깥쪽 부모 */
+    display: flex;
+    width: 800px;
+    height: 500px;
+
+    flex-direction: column;
+}
+
+.header-1, .footer-1 {
+    background-color: gray;
+    flex-basis: 20%;
+}
+
+.body-1 {
+    flex-basis: 60%; /* 자식 속성 */
+    /* body-1은 body-item-1,2,3의 부모이면서
+    container-1의 자식
+    */
+    display: flex;
+}
+
+.body-item-1 {
+    background-color: skyblue;
+    flex-basis: 30%;
+}
+
+.body-item-2 {
+    background-color: tomato;
+    flex-basis: 50%;
+}
+
+.body-item-3 {
+    background-color:antiquewhite;
+    flex-basis: 20%;
+}
+
+.container-2 {
+    display: flex;
+    width: 800px;
+    height: 500px;
+
+    flex-direction: column;
+}
+
+.head {
+    background-color: red;
+    flex-basis: 20%;
+}
+
+.body-2 {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.body-2-1 {
+    background-color: yellow;
+    flex-basis: 30%;
+}
+
+.body-2-2 {
+    background-color: greenyellow;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.body2-2-1 {
+    background-color: blue;
+    flex-basis: 20%;
+}
+
+.con3 {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    flex-direction: column;
+}
+
+.header3 {
+    background-color: yellow;
+    flex-basis: 30%;
+}
+
+.body3 {
+    flex-basis: 70%;
+    display: flex;
+}
+
+.body3-1 {
+    background-color: skyblue;
+    flex-basis: 30%;
+}
+
+.body3-2 {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body3-2-1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.body3-2-2 {
+    flex-basis: 50%;
+    background-color: violet;
+}
+
+.aqua {
+    flex-basis: 70%;
+    background-color: aqua;
+}
+
+.tomato {
+    flex-basis: 30%;
+    background-color: tomato;
+}
+
+.con4 {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    flex-direction: column;
+}
+
+.con4-head, .con4-foot {
+    flex-basis: 20%;
+    background-color: green;
+}
+
+.con4-body {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.body4-1 {
+    background-color: yellow;
+    flex-basis: 30%;
+}
+
+.body4-2 {
+    flex-basis: 70%;
+    display: flex;
+    background-color: orange;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.body4-3 {
+    background-color: red;
+    width: 150px;
+    height: 150px;
+}
+
+.con5 {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    flex-direction: column;
+}
+
+.con5-head {
+    flex-basis: 30%;
+    display: flex;
+}
+
+.head5-1 {
+    flex-basis: 20%;
+    background-color: yellow;
+}
+
+.head5-2, .head5-3 {
+    flex-basis: 40%;
+    background-color: yellow;
+}
+
+.con5-body {
+    flex-basis: 70%;
+    display: flex;
+}
+
+.body5-1 {
+    display: flex;
+    background-color: skyblue;
+    flex-basis: 30%;
+    flex-direction: column;
+}
+
+.body5-3 {
+    flex-basis: calc(100%/3);
+}
+
+.body5-2 {
+    flex-basis: 70%;
+    display: flex;
+}
+
+.body5-4 {
+    flex-basis: 20%;
+    background-color: pink;
+}
+
+.body5-6 {
+    flex-basis: 20%;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+
+.body5-5 {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#body5-6-1, #body5-6-3 {
+    flex-basis: 20%;
+}
+
+#body5-6-2 {
+    flex-basis: 60%;
+}
+
+#body5-7-1 {
+    flex-basis: 50%;
+    background-color: orange;
+}
+
+#body5-7-2 {
+    flex-basis: 50%;
+    display: flex;
+}
+
+#body5-8-1 {
+    flex-basis: 50%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+#body5-8-2 {
+    flex-basis: 50%;
+    background-color: red;
+}
+
+#body5-9, #body5-10 {
+    flex-basis: 50%;
+}

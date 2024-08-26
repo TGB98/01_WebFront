@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body {
+  margin: 0;
+}
+main {
+  height: 1140px;
+  margin: 0;
+}
+header {
+  display: flex;
+  height: 100px;
+}
+
+header > section:nth-of-type(1) {
+  flex-basis: 1%
+}
+
+#list-btn {
+  font-size: 34px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  border-radius: 100%;
+  line-height: 90px;
+  padding: none;
+}
+
+#list-btn:hover {
+  background-color: gainsboro;
+}
+
+header > section:nth-of-type(2) {
+  flex-basis: 5%;
+}
+
+#youtube-logo {
+  width: 120px;
+  padding: none;
+}
+
+header > section:nth-of-type(2) {
+  line-height: 100px;
+}
+
+header > section:nth-of-type(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 53%;
+}
+
+.search-area {
+  display: flex;
+}
+
+.search-area fieldset {
+  margin: none;
+  border: none;
+  display: flex;
+  width: 400px;
+}
+
+#query {
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid gray;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+  margin: none;
+  height: 50px;
+  width: 484px;
+}
+
+#search-btn {
+  background-color: transparent;
+  border: 1px solid gray;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 25px;
+  height: auto;
+}
+
+header > section:nth-of-type(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 1%;
+}
+
+#alert-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  border-radius: 100%;
+  justify-content: right;
+  align-items: right;
+}
+
+#alert-btn:hover {
+  background-color: gainsboro;
+}
+
+header > section:nth-of-type(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+}
+
+#id-pw-area {
+  display: flex;
+  border: none;
+  flex-direction: column;
+}
+
+#login-query, #login-pw {
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#login-query:hover, #login-pw:hover {
+  background-color: aliceblue;
+}
+
+#login-btn {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+#login-btn:hover {
+  background-color: aliceblue
+}

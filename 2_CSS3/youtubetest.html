@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>youtubetest</title>
+
+  <link href="./CSS/youtubetest.css" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/d5cdd4eff1.js" crossorigin="anonymous"></script>
+</head>
+
+  <body>
+    <main>
+      <header>
+        <section><!--메뉴 아이콘-->
+          <button class="fa-solid fa-bars" id="list-btn"></button>
+        </section>
+        <section><!--유튜브로고-->
+          <a href="https://www.youtube.com" target="_blank">
+            <img src="/01_WebFront/images/images/Youtubelogo-2.png" id="youtube-logo">
+          </a>
+        </section>
+        <section class="search-area"><!--검색 창-->
+          <section>
+            <form action="#" name="search-form">
+              <fieldset>
+                <input type="search" id="query" name="query">
+                <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+              </fieldset>
+            </form>
+          </section>
+        </section>
+
+        <section class="alert-login"><!--알람이나 사용자 정보-->
+          <section id="alert">
+            <button id="alert-btn" class="fa-regular fa-bell"></button>
+          </section>
+        </section>
+
+        <section id="login">
+          <form action="#" name="login-form">
+            <fieldset id="id-pw-area">
+              <input id="login-query" placeholder="아이디" name="inputId">
+              <input id="login-pw" type="password" placeholder="비밀번호" name="inputPw">
+              <section>
+                <button id="login-btn">로그인</button>
+              </section>
+            </fieldset>
+          </form>
+        </section>
+      </header>
+    </main>
+  </body>
+
+</html>

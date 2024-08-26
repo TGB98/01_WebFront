@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_입력연습문제3</title>
+</head>
+    <body>
+        <form action="12_입력연습문제3.html" target="_blank" method="get">
+            <h1>회원 가입</h1><br>
+            
+            <fieldset>
+                <legend>필수 입력 정보</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><label for="ID">ID</label></th>
+                            <td><input name="ID" id="id"></td>
+                            <td><button type="button" id="check">중복 확인</button></td>
+                        </tr>
+                        <tr>
+                            <th><label for="PW">비밀번호</label></th>
+                            <td colspan="2"><input type="password" placeholder="영문,숫자,특수문자 포함 8자 이상" size="30" name="PW" id="pw"></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호 확인</th>
+                            <td colspan="2"><input type="password" size="30"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="Email">Email</label></th>
+                            <td><input type="email" name="Email" id="email"></td>
+                            <td><select>
+                                <option selected>직접 입력</option>
+                                <option>naver.com</option>
+                            </select></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>추가 정보</legend>
+                프로필 사진 <input type="file"><br><br>
+                성별 : <label>남자<input type="radio" name="Sexual" checked value="남성"></label> <label>여자<input type="radio" name="Sexual" value="여성"></label><br><br>
+                생년월일 : <label><input type="date" name="Date"></label><br><br>
+                취미<br>
+                <label><input type="checkbox">야구</label>&nbsp;<label><input type="checkbox">농구</label>&nbsp;<label><input type="checkbox">축구</label><br>
+                <label><input type="checkbox" checked name="hobby">공부</label>&nbsp;<label><input type="checkbox">음악감상</label><br>
+                <label><input type="checkbox">기타</label><input><br><br>
+
+                자기소개<br>
+                <textarea rows="7" cols="100" style="resize: none;"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit" id="sign">회원가입</button> 
+            <button type="reset">다시입력</button> 
+            <button type="submit" id="back">이전으로</button>
+
+            <script>
+                document.getElementById("check").addEventListener("click", function(){alert("사용할 수 있는 아이디 입니다.")})
+                document.getElementById("sign").addEventListener("click", function(){alert("회원가입 완료")})
+                document.getElementById("back").addEventListener("click", function(){confirm("회원가입을 취소하고 이전 페이지로 돌아가시겠습니까?")})
+            </script>
+
+        </form>
+
+
+    </body>
+</html>

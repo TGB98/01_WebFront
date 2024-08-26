@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_입력연습문제</title>
+</head>
+    <body> 
+        <form>
+        고객명 : <input><br><br>
+        전화번호 : <input type="password"><br><br>
+        E-mail : <input type="email"><br><br>
+        <label for="피자">피자선택 :</label>
+            <select id="피자">
+                <option value="not choose">선택하지 않음</option>
+                <option value="bacon">베이컨 피자</option>
+                <option value="cheese">치즈 피자</option>
+                <option value="patato">감자 피자</option>
+            </select><br><br><br>
+        
+        <fieldset>
+            <legend>피자 사이즈</legend>
+        
+
+                <label>
+                    <input type="radio" name="PIZZA">Small
+                </label><br>
+                <label>
+                    <input type="radio" name="PIZZA">Medium
+                </label><br>
+                <label>
+                    <input type="radio" name="PIZZA">Large
+                </label>
+                </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>토핑 선택</legend>
+        
+                <label>
+                    <input type="radio" name="toping">베이컨
+                </label><br>
+                <label>
+                    <input type="radio" name="toping">치즈
+                </label><br>
+                <label>
+                    <input type="radio" name="toping">양파
+                </label><br>
+                <label>
+                    <input type="radio" name="toping">버섯
+                </label>
+        </fieldset>
+        <br>
+
+        희망 배송 시간 : <input type="time"><br><br>
+
+        배송시 요청사항 : <textarea></textarea><br><br>
+
+        <button>주문하기</button><br><br>
+
+        <input type="reset" value="취소하기">
+    </form>
+</body>
+</html>
