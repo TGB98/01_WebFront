@@ -202,7 +202,7 @@ arrowList[3].addEventListener("click", () => {
 
 console.log("git Test 학원에서 저장");
 
-
+console.log("git Test 집에서 저장");
 
 
 
